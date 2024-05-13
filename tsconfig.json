@@ -1,17 +1,27 @@
 {
   "extends": "expo/tsconfig.base",
+  
   "compilerOptions": {
     "strict": true,
     "paths": {
       "@/*": [
         "./*"
-      ]
-    }
+      ],
+      
+
+    },
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "module": "commonjs",
+    "target": "es6",
+    "jsx": "react"
   },
   "include": [
     "**/*.ts",
     "**/*.tsx",
     ".expo/types/**/*.ts",
     "expo-env.d.ts"
-  ]
+, "components/common/cards/nearby/NearbyJobCard.jsx"  ]
+  
 }
